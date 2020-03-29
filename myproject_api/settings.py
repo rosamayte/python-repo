@@ -43,8 +43,10 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ]
+        # 'rest_framework.permissions.AllowAny',
+        # 'rest_framework.authentication.TokenAuthentication'
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': []
 }
 
 MIDDLEWARE = [
@@ -84,7 +86,7 @@ WSGI_APPLICATION = 'myproject_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'djongoprueba_db',
+        'NAME': 'd3builder',
     }
 }
 

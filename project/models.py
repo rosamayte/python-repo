@@ -1,11 +1,7 @@
 
 from __future__ import unicode_literals
 from django.db import models
-
-
 from djongo import models #Note the import method for mongo models
-
-
 
 # Create your models here.
 
@@ -15,9 +11,6 @@ class Project(models.Model):
 
     def __str__(self):
         return self.medium_url
-
-
-
 
 class Student(models.Model): #Collection name
     # Auto updated when data is inserted
